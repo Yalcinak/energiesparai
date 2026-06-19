@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://energiesparai.de/</loc>
     <priority>1.0</priority>
   </url>
+
+  <url>
+    <loc>https://energiesparai.de/stromvergleich</loc>
+  </url>
+
+  <url>
+    <loc>https://energiesparai.de/gasvergleich</loc>
+  </url>
+
+  <url>
+    <loc>https://energiesparai.de/gewerbestrom</loc>
+  </url>
+
+  <url>
+    <loc>https://energiesparai.de/gewerbegas</loc>
+  </url>
+
+  <url>
+    <loc>https://energiesparai.de/energieberatung</loc>
+  </url>
+
 </urlset>
