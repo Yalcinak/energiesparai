@@ -1,30 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
-    <loc>https://energiesparai.de/</loc>
+    <loc>https://www.energiesparai.de</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-
   <url>
-    <loc>https://energiesparai.de/stromvergleich</loc>
+    <loc>https://www.energiesparai.de/stromvergleich</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
-
   <url>
-    <loc>https://energiesparai.de/gasvergleich</loc>
+    <loc>https://www.energiesparai.de/gasvergleich</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
-
   <url>
-    <loc>https://energiesparai.de/gewerbestrom</loc>
+    <loc>https://www.energiesparai.de/gewerbestrom</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://energiesparai.de/gewerbegas</loc>
+    <loc>https://www.energiesparai.de/gewerbegas</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://energiesparai.de/energieberatung</loc>
+    <loc>https://www.energiesparai.de/energieberatung</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
-
+  <url>
+    <loc>https://www.energiesparai.de/impressum</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.energiesparai.de/datenschutz</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.energiesparai.de/agb</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
