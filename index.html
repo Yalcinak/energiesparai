@@ -289,12 +289,7 @@
     }
     .hero-card-header h3 { color: white; margin: 0; font-size: .95rem; }
     .hero-card-heading { color: white; margin: 0; font-size: .95rem; font-weight: 700; }
-    .hero-card-header p { color: rgba(255,255,255,.6); margin: 0; font-size: .8rem; }
-    .live-dot {
-      width: 8px; height: 8px; background: var(--green); border-radius: 50%;
-      animation: pulse 2s infinite; flex-shrink: 0;
-    }
-    @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .4; } }
+    .hero-card-header p { color: rgba(255,255,255,.6); margin: 0; font-size: .8rem; }   
     .counter-grid {
       display: grid; grid-template-columns: 1fr 1fr; gap: 0;
     }
@@ -580,12 +575,14 @@
       </div>
       <div class="counter-grid">
         <div class="counter-cell">
-          <div class="counter-label">Ø Ersparnis / Jahr</div>
-          <div class="counter-value green" id="cnt-ersparnis">318 €</div>
+          <div class="counter-label">Ersparnis möglich</div>
+          <div class="counter-value green" id="cnt-ersparnis">200–500 €</div>
+		  <div class="counter-sub">pro Jahr (Marktdurchschnitt)</div>
         </div>
         <div class="counter-cell">
-          <div class="counter-label">Geprüfte Anfragen</div>
-          <div class="counter-value" id="cnt-anfragen">47</div>
+          <div class="counter-label">Anbieter im Vergleich</div>
+		  <div class="counter-value">100+</div>
+		  <div class="counter-sub">deutschlandweit</div>          
         </div>
         <div class="counter-cell">
           <div class="counter-label">Bearbeitungszeit</div>
@@ -867,7 +864,7 @@
   <div class="section-inner" style="max-width:820px;">
     <h2 class="section-title" style="margin-bottom:1rem;">Strom- und Gastarife vergleichen – so einfach geht Stromanbieter wechseln</h2>
     <div style="font-size:.95rem;color:var(--text-muted);line-height:1.8;display:grid;gap:1rem;">
-      <p>Viele Haushalte in Deutschland zahlen jedes Jahr zu viel für ihren Strom- oder Gasvertrag. Dabei ist ein <strong>Anbieterwechsel</strong> einfacher als gedacht: Mit dem kostenlosen KI-gestützten Tarifvergleich von EnergiesparAI finden wir in wenigen Minuten günstigere Strom- und Gastarife – unverbindlich und deutschlandweit.</p>
+      <p>Viele Haushalte in Deutschland zahlen jedes Jahr zu viel für ihren Strom- oder Gasvertrag. Dabei ist ein <strong>Anbieterwechsel</strong> einfacher als gedacht: Mit dem kostenlosen Tarifvergleich von EnergiesparAI finden wir in wenigen Minuten günstigere Strom- und Gastarife – unverbindlich und deutschlandweit.</p>
       <p>Ob Sie einen <strong>günstigen Stromtarif</strong> für Ihren Haushalt suchen, Ihren <strong>Gasanbieter wechseln</strong> möchten oder als Gewerbetreibender Ihre Energiekosten senken wollen: Wir vergleichen 100+ Anbieter und stellen Ihnen passende Angebote zusammen.</p>
       <p>Besonders in Regionen wie <strong>Köln, Düsseldorf, Hamburg, Berlin und München</strong> gibt es erhebliche Unterschiede zwischen den Tarifen der Grundversorger und günstigeren Alternativanbietern. Unser unabhängiger Vergleich berücksichtigt Ihren Jahresverbrauch, Ihre PLZ und Ihre persönlichen Präferenzen – inklusive Ökostrom-Optionen.</p>
     </div>
@@ -1046,25 +1043,7 @@ Ich freue mich auf Ihre Rückmeldung!`;
   }
 
   // Live counter animation
-  function animCount(id, target, suffix, duration) {
-    const el = document.getElementById(id);
-    if (!el) return;
-    let start = 0;
-    const step = target / (duration / 16);
-    const run = () => {
-      start = Math.min(start + step, target);
-      el.textContent = Math.round(start).toLocaleString('de-DE') + suffix;
-      if (start < target) requestAnimationFrame(run);
-    };
-    run();
-  }
-
-  window.addEventListener('load', () => {
-    setTimeout(() => {
-      animCount('cnt-ersparnis', 318, ' €', 1400);
-      animCount('cnt-anfragen', 47, '', 1200);
-    }, 600);
-  });
+ 
 
   updateUI();
 </script>
