@@ -31,7 +31,45 @@
       "@type": "Organization",
       "name": "EnergiesparAI",
       "logo": "https://energiesparai.de/logo.png"
-    }
+    },
+    "blogPost": [
+      {
+        "@type": "BlogPosting",
+        "headline": "Stromanbieter wechseln 2026: Der komplette Leitfaden",
+        "url": "https://energiesparai.de/blog/stromanbieter-wechseln-2026.html",
+        "datePublished": "2026-01-15"
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Strompreis 2026: Wie sich die Kosten entwickeln",
+        "url": "https://energiesparai.de/blog/strompreis-2026.html",
+        "datePublished": "2026-01-10"
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Gaspreise 2026: Was Verbraucher jetzt wissen müssen",
+        "url": "https://energiesparai.de/blog/gaspreise-2026.html",
+        "datePublished": "2026-01-05"
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Stromrechnung verstehen: Grundpreis, Arbeitspreis & Co.",
+        "url": "https://energiesparai.de/blog/stromrechnung-verstehen.html",
+        "datePublished": "2025-12-20"
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Netzentgelte 2026: Was sich für Verbraucher ändert",
+        "url": "https://energiesparai.de/blog/netzentgelte-2026.html",
+        "datePublished": "2025-12-12"
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Heizkosten senken: 7 Maßnahmen für den Winter",
+        "url": "https://energiesparai.de/blog/heizkosten-senken.html",
+        "datePublished": "2025-12-05"
+      }
+    ]
   }
   </script>
 
@@ -188,6 +226,11 @@
       display: grid;
       grid-template-columns: 1.1fr 1fr;
       margin-bottom: 3rem;
+      transition: transform .25s, box-shadow .25s;
+    }
+    .featured-post:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
     }
     .featured-img {
       background: linear-gradient(135deg, var(--navy) 0%, var(--green) 100%);
@@ -212,6 +255,7 @@
       display: flex; align-items: center; gap: .8rem;
       font-size: .8rem; color: var(--text-faint);
       margin-bottom: 1rem;
+      flex-wrap: wrap;
     }
     .post-cat {
       background: var(--green-light); color: var(--green-dark);
@@ -260,7 +304,6 @@
       box-shadow: var(--shadow-sm);
       transition: transform .25s, box-shadow .25s;
       display: flex; flex-direction: column;
-      cursor: pointer;
     }
     .post-card:hover {
       transform: translateY(-4px);
@@ -278,6 +321,7 @@
     .post-img.rat { background: linear-gradient(135deg, #6366f1, #8b5cf6); }
     .post-img.oeko { background: linear-gradient(135deg, #059669, #10b981); }
     .post-img.wechsel { background: linear-gradient(135deg, var(--navy), var(--accent)); }
+    .post-img.netz { background: linear-gradient(135deg, #be185d, #ec4899); }
     .post-img svg { width: 56px; height: 56px; opacity: .9; }
 
     .post-body {
@@ -410,7 +454,6 @@
     <button class="cat-btn" data-cat="gas">Gas</button>
     <button class="cat-btn" data-cat="sparen">Spartipps</button>
     <button class="cat-btn" data-cat="ratgeber">Ratgeber</button>
-    <button class="cat-btn" data-cat="oeko">Ökostrom</button>
   </div>
 </div>
 
@@ -419,26 +462,28 @@
   <div class="section-inner">
 
     <!-- FEATURED POST -->
-    <article class="featured-post" data-cat="ratgeber">
-      <div class="featured-img">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M13 2L5 14H11L10 22L19 9H13V2Z"/>
-        </svg>
-      </div>
-      <div class="featured-content">
-        <div class="post-meta">
-          <span class="post-cat">Ratgeber</span>
-          <span>15. Januar 2026</span>
-          <span>· 7 Min. Lesezeit</span>
+    <a href="/blog/stromanbieter-wechseln-2026.html" style="text-decoration:none;color:inherit;display:block;">
+      <article class="featured-post" data-cat="ratgeber">
+        <div class="featured-img">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M13 2L5 14H11L10 22L19 9H13V2Z"/>
+          </svg>
         </div>
-        <h2>Stromanbieter wechseln 2026: Der komplette Leitfaden</h2>
-        <p>Wie viel können Sie wirklich sparen? Welche Fallen gibt es bei Bonuszahlungen? Und wie läuft ein Wechsel ab, ohne dass der Strom kurz weg ist? Wir zeigen Schritt für Schritt, worauf es ankommt.</p>
-        <a href="#" class="read-more">
-          Artikel lesen
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-    </article>
+        <div class="featured-content">
+          <div class="post-meta">
+            <span class="post-cat">Ratgeber</span>
+            <span>15. Januar 2026</span>
+            <span>· 7 Min. Lesezeit</span>
+          </div>
+          <h2>Stromanbieter wechseln 2026: Der komplette Leitfaden</h2>
+          <p>Wie viel können Sie wirklich sparen? Welche Fallen gibt es bei Bonuszahlungen? Und wie läuft ein Wechsel ab, ohne dass der Strom kurz weg ist? Wir zeigen Schritt für Schritt, worauf es ankommt.</p>
+          <span class="read-more">
+            Artikel lesen
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+      </article>
+    </a>
 
     <!-- SECTION HEAD -->
     <div class="section-head">
@@ -449,95 +494,113 @@
     <!-- POST GRID -->
     <div class="post-grid" id="postGrid">
 
-      <article class="post-card" data-cat="sparen">
-        <div class="post-img spar">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-        </div>
-        <div class="post-body">
-          <div class="post-meta">
-            <span class="post-cat">Spartipps</span>
-            <span>10. Jan 2026</span>
+      <!-- STROMPREIS 2026 -->
+      <a href="/blog/strompreis-2026.html">
+        <article class="post-card" data-cat="strom">
+          <div class="post-img wechsel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L5 14H11L10 22L19 9H13V2Z"/></svg>
           </div>
-          <h3>10 Sofort-Tipps: So senken Sie Ihren Stromverbrauch um 30 %</h3>
-          <p>Vom Kühlschrank bis zum Standby: Diese Maßnahmen kosten nichts und sparen sofort bares Geld.</p>
-          <a href="#" class="read-more">Mehr lesen <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-      </article>
+          <div class="post-body">
+            <div class="post-meta">
+              <span class="post-cat">Strom</span>
+              <span>10. Jan 2026</span>
+            </div>
+            <h3>Strompreis 2026: Wie sich die Kosten entwickeln</h3>
+            <p>Was kostet eine kWh im neuen Jahr wirklich? Aktuelle Prognosen und was Sie jetzt tun können.</p>
+            <span class="read-more">Mehr lesen <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </article>
+      </a>
 
-      <article class="post-card" data-cat="gas">
-        <div class="post-img gas">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22c4.418 0 8-3.582 8-8 0-5-4-9-8-14-4 5-8 9-8 14 0 4.418 3.582 8 8 8z"/></svg>
-        </div>
-        <div class="post-body">
-          <div class="post-meta">
-            <span class="post-cat">Gas</span>
-            <span>5. Jan 2026</span>
+      <!-- GASPREISE 2026 -->
+      <a href="/blog/gaspreise-2026.html">
+        <article class="post-card" data-cat="gas">
+          <div class="post-img gas">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22c4.418 0 8-3.582 8-8 0-5-4-9-8-14-4 5-8 9-8 14 0 4.418 3.582 8 8 8z"/></svg>
           </div>
-          <h3>Gaspreise 2026: Was Verbraucher jetzt wissen müssen</h3>
-          <p>Wie entwickeln sich die Gaspreise? Lohnt sich ein Wechsel jetzt oder lieber warten? Eine ehrliche Analyse.</p>
-          <a href="#" class="read-more">Mehr lesen <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-      </article>
+          <div class="post-body">
+            <div class="post-meta">
+              <span class="post-cat">Gas</span>
+              <span>5. Jan 2026</span>
+            </div>
+            <h3>Gaspreise 2026: Was Verbraucher jetzt wissen müssen</h3>
+            <p>Wie entwickeln sich die Gaspreise? Lohnt sich ein Wechsel jetzt oder lieber warten? Eine ehrliche Analyse.</p>
+            <span class="read-more">Mehr lesen <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </article>
+      </a>
 
-      <article class="post-card" data-cat="oeko">
-        <div class="post-img oeko">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2z"/><path d="M12 7v10M7 12h10"/></svg>
-        </div>
-        <div class="post-body">
-          <div class="post-meta">
-            <span class="post-cat">Ökostrom</span>
-            <span>28. Dez 2025</span>
+      <!-- STROMRECHNUNG VERSTEHEN -->
+      <a href="/blog/stromrechnung-verstehen.html">
+        <article class="post-card" data-cat="ratgeber">
+          <div class="post-img rat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
           </div>
-          <h3>Echter Ökostrom oder Greenwashing? So erkennen Sie den Unterschied</h3>
-          <p>Nicht jeder "grüne" Tarif ist wirklich nachhaltig. Diese Siegel und Kriterien sollten Sie kennen.</p>
-          <a href="#" class="read-more">Mehr lesen <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-      </article>
+          <div class="post-body">
+            <div class="post-meta">
+              <span class="post-cat">Ratgeber</span>
+              <span>20. Dez 2025</span>
+            </div>
+            <h3>Stromrechnung verstehen: Was bedeuten Grundpreis, Arbeitspreis & Co.?</h3>
+            <p>Jede Stromrechnung ist anders aufgebaut. Wir erklären die wichtigsten Posten Schritt für Schritt.</p>
+            <span class="read-more">Mehr lesen <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </article>
+      </a>
 
-      <article class="post-card" data-cat="ratgeber">
-        <div class="post-img rat">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-        </div>
-        <div class="post-body">
-          <div class="post-meta">
-            <span class="post-cat">Ratgeber</span>
-            <span>20. Dez 2025</span>
+      <!-- NETZENTGELTE 2026 -->
+      <a href="/blog/netzentgelte-2026.html">
+        <article class="post-card" data-cat="ratgeber">
+          <div class="post-img netz">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/></svg>
           </div>
-          <h3>Stromrechnung verstehen: Was bedeuten Grundpreis, Arbeitspreis & Co.?</h3>
-          <p>Jede Stromrechnung ist anders aufgebaut. Wir erklären die wichtigsten Posten Schritt für Schritt.</p>
-          <a href="#" class="read-more">Mehr lesen <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-      </article>
+          <div class="post-body">
+            <div class="post-meta">
+              <span class="post-cat">Ratgeber</span>
+              <span>12. Dez 2025</span>
+            </div>
+            <h3>Netzentgelte 2026: Was sich für Verbraucher ändert</h3>
+            <p>Steigende Netzentgelte treiben Strompreise. Was Sie zu den neuen Gebühren wissen müssen.</p>
+            <span class="read-more">Mehr lesen <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </article>
+      </a>
 
-      <article class="post-card" data-cat="strom">
-        <div class="post-img wechsel">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/><polyline points="12 7 12 12 15 15"/></svg>
-        </div>
-        <div class="post-body">
-          <div class="post-meta">
-            <span class="post-cat">Strom</span>
-            <span>12. Dez 2025</span>
+      <!-- HEIZKOSTEN SENKEN -->
+      <a href="/blog/heizkosten-senken.html">
+        <article class="post-card" data-cat="sparen">
+          <div class="post-img spar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           </div>
-          <h3>Wann ist der beste Zeitpunkt für einen Stromanbieter-Wechsel?</h3>
-          <p>Vertragsende, Preiserhöhung, Umzug: Wir zeigen, wann sich der Wechsel wirklich lohnt.</p>
-          <a href="#" class="read-more">Mehr lesen <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-      </article>
+          <div class="post-body">
+            <div class="post-meta">
+              <span class="post-cat">Spartipps</span>
+              <span>5. Dez 2025</span>
+            </div>
+            <h3>Heizkosten senken: 7 Maßnahmen für den Winter</h3>
+            <p>Richtig lüften, Heizkörper entlüften, smarte Thermostate: So sparen Sie spürbar bei Gas und Heizöl.</p>
+            <span class="read-more">Mehr lesen <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </article>
+      </a>
 
-      <article class="post-card" data-cat="sparen">
-        <div class="post-img spar">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-        </div>
-        <div class="post-body">
-          <div class="post-meta">
-            <span class="post-cat">Spartipps</span>
-            <span>5. Dez 2025</span>
+      <!-- STROMANBIETER WECHSELN (klein) -->
+      <a href="/blog/stromanbieter-wechseln-2026.html">
+        <article class="post-card" data-cat="ratgeber">
+          <div class="post-img rat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/><polyline points="12 7 12 12 15 15"/></svg>
           </div>
-          <h3>Heizkosten senken: 7 Maßnahmen für den Winter</h3>
-          <p>Richtig lüften, Heizkörper entlüften, smarte Thermostate: So sparen Sie spürbar bei Gas und Heizöl.</p>
-          <a href="#" class="read-more">Mehr lesen <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-        </div>
-      </article>
+          <div class="post-body">
+            <div class="post-meta">
+              <span class="post-cat">Ratgeber</span>
+              <span>15. Jan 2026</span>
+            </div>
+            <h3>Stromanbieter wechseln 2026: Der komplette Leitfaden</h3>
+            <p>Schritt-für-Schritt-Anleitung zum Anbieterwechsel. So sparen Sie ohne Risiko.</p>
+            <span class="read-more">Mehr lesen <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </article>
+      </a>
 
     </div>
 
@@ -584,10 +647,11 @@
       const cat = btn.dataset.cat;
 
       allCards.forEach(card => {
+        const parent = card.closest('a') || card;
         if (cat === 'all' || card.dataset.cat === cat) {
-          card.style.display = '';
+          parent.style.display = '';
         } else {
-          card.style.display = 'none';
+          parent.style.display = 'none';
         }
       });
     });
